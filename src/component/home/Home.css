@@ -1,0 +1,146 @@
+.home {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: aliceblue;
+  top: 0;
+  bottom: 0;
+  
+  mix-blend-mode: multiply;
+}
+
+.home img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+
+.homeContent {
+  width: 100%;
+  height: max-content;
+  padding: 8rem 1.5rem 3rem;
+  display: flex;
+  row-gap: 3rem;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  z-index: 100;
+
+  .textDiv {
+    padding: 2rem 0;
+    .smalltext {
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #4b4849;
+    }
+
+    .hometitle {
+      position: relative;
+      font-size: 3rem;
+      color: #d80032;
+      text-decoration: 1px solid white;
+    }
+  }
+
+  .selectOptions {
+    position: relative;
+    padding: 2rem 1rem;
+    background: #d80032;
+    border-radius: 10px;
+    gap: 1rem;
+
+    label {
+      display: block;
+      color: #1a1a1a;
+      padding-bottom: 10px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+}
+
+.input__group select {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: 1px solid white;
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn {
+  margin-top: 22px;
+  padding: 0.57rem 1.5rem;
+  outline: none;
+  border: 1px solid white;
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header__form {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.header__form form {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.input__group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input__group label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.input__group input {
+  max-width: 140px;
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.input__group option {
+  flex-wrap: wrap;
+  background-color: var(--white);
+  color: black;
+  border-radius: 10px;
+}
