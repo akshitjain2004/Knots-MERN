@@ -14,7 +14,7 @@
   background: aliceblue;
   top: 0;
   bottom: 0;
-  
+
   mix-blend-mode: multiply;
 }
 
@@ -38,7 +38,7 @@
   justify-content: center;
   margin: auto;
   color: white;
-  z-index: 100;
+  z-index: 1;
 
   .textDiv {
     padding: 2rem 0;
