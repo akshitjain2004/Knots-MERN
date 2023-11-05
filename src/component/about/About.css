@@ -1,52 +1,56 @@
-
-.containers{
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
+.about {
+  margin: 2rem 1rem;
 }
 
-.works{
-    margin-top:10px;
-}
-section .step .icon{
-    height: 140px;
-    width: 140px;
-    padding: 3px;
-}
-section .step .icon i{
-    height: 100%;
-    width: 100%;
-    font-size: 15vh;
-    color: #d80032;
-
+.about header {
+  text-align: center;
 }
 
-.step{
-    position: relative;
-    border:1px solid #d80032;
-    border-radius: 20px;
-    margin: 5rem;
-    justify-content: space-evenly;
-  
+.about h1 {
+  font-size: 2rem;
 }
 
-.step .iconcontent{ 
-    display: flex;
-    padding: 30px;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    z-index: 100;
-   
+.about p {
+  width: 75%;
+  margin: 0 auto;
 }
 
-.step .iconcontent span{
-    font-size: 1.1rem;
-    font-weight: 400;
+.card__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-top: 2rem;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 18rem;
+  height: 15rem;
+  background: white;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.card i {
+  font-size: 3rem;
+  color: #d80032;
+  margin-bottom: 1rem;
+}
+
+@media (orientation: landscape) {
+  .about h1 {
+    font-size: 4rem;
+  }
+}
+
 /*
 .works {
   margin-top: 5px;
