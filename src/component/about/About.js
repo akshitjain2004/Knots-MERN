@@ -4,60 +4,34 @@ import "./About.css";
 
 function About() {
   return (
-    <section>
-      <center>
-        <div className="works">
-          <h2>How this works</h2>
-          <p>
-            Found the one? Let us make it easy for you to plan your wedding so
-            you dont have to end up in tears.
-          </p>
+    <section className="about">
+      <header>
+        <h1>HOW THIS WORKS?</h1>
+        <p>
+          Found the one? Let us make it easy for you to plan your wedding so you
+          dont have to end up in tears.
+        </p>
+      </header>
+      <div className="card__container">
+        <div className="card">
+          <i className="uil uil-search"></i>
+          <p>STEP 1</p>
+          <h2>Select Vendors</h2>
         </div>
-      </center>
-      <div className="containers">
-        <div className="stepcontainer">
-          <div className="step">
-            <div className="icon">
-              <i class="uil uil-search"></i>
-            </div>
-            <div className="iconcontent">
-              <h2>Step-1</h2>
-              <span>Select Vendor </span>
-            </div>
-          </div>
+        <div className="card">
+          <i className="uil uil-arrow"></i>
+          <p>STEP 2</p>
+          <h2>Compare Vendors</h2>
         </div>
-        <div className="stepcontainer">
-          <div className="step">
-            <div className="icon">
-              <i class="uil uil-arrows"></i>
-            </div>
-            <div className="iconcontent">
-              <h2>Step-2</h2>
-              <span>Compare Vendors</span>
-            </div>
-          </div>
+        <div className="card">
+          <i className="uil uil-check"></i>
+          <p>STEP 3</p>
+          <h2>Visit and Book</h2>
         </div>
-        <div className="stepcontainer">
-          <div className="step">
-            <div className="icon">
-              <i class="uil uil-check"></i>
-            </div>
-            <div className="iconcontent">
-              <h2>Step-3</h2>
-              <span>Visit and Book</span>
-            </div>
-          </div>
-        </div>
-        <div className="stepcontainer">
-          <div className="step">
-            <div className="icon">
-              <i class="uil uil-glass-martini"></i>
-            </div>
-            <div className="iconcontent">
-              <h2>Step-4</h2>
-              <span>Enjoy the wedding </span>
-            </div>
-          </div>
+        <div className="card">
+          <i className="uil uil-glass-martini"></i>
+          <p>STEP 4</p>
+          <h2>Enjoy the Wedding</h2>
         </div>
       </div>
     </section>
