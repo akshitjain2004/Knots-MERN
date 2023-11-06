@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import homeimg from "../../assets/final.webp";
 function Contact() {
   //get database
   const nameInput = document.querySelector("#name");
@@ -56,21 +57,24 @@ function Contact() {
   }
   return (
     <section className="contact"id="contact">
-      <div id="overlay-contact">
+    
+      <div  id="overlay-contact">
         <form onsubmit="event.preventDefault(): validateForm()">
+        
           <h1>Contact Us</h1>
-
+           <div className="innercontent">
           <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Your name"></input>
+          <input type="text" id="name" placeholder=" Enter Your name"></input>
           <small class="error"></small>
 
           <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Your email"></input>
+          <input type="text" id="email" placeholder=" Enter Your email"></input>
           <small class="error"></small>
 
           <label for="message">Message</label>
           <textarea name="message" id="message" rows="6"></textarea>
           <small class="error"></small>
+          </div>
 
           <div class="center">
             <input class="submit" type="submit" value="Send Message"></input>
