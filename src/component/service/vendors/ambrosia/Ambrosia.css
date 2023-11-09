@@ -1,0 +1,56 @@
+.heading{
+    position: relative;
+    top: 10px;
+    right: 620px;
+}
+.imgloc{
+    position: relative;
+    left: 5px;
+}
+.loc{
+    position: relative;
+    bottom: 45px;
+    left: 50px;
+}
+.locpic{
+    position: relative;
+    bottom: 100px;
+    left: 1200px;
+    height: 200px;
+    width: 300px;
+}
+.number{
+    position: relative;
+    left: 1300px;
+    bottom: 60px;
+}
+.visicon{
+    position: relative;
+    left: 900px;
+    bottom: 20px;
+}
+.like{
+border: 3px ;
+width: 180px;
+background-color:red ;
+position: relative;
+bottom: 200px;
+border-radius: 10px;
+left: 10px;
+}
+.icon{
+    color: white;
+    text-align: center;
+}
+.love{
+    height: 30px;
+    width: 30px;
+    color: white;
+}
+.overview{
+border: 2px solid;
+width: 90%;
+border-radius: 15px;
+position: relative;
+left: 50px;
+}

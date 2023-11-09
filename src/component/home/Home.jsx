@@ -3,7 +3,8 @@ import homeimg from "../../assets/final.webp";
 import "./Home.css";
 import Review from "../testimonial/Review";
 import About from "../about/About";
-
+import Service from "../service/Service";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
@@ -44,8 +45,9 @@ function Home() {
                   <option value="location5">Udaipur</option>
                 </select>
               </div>
-
-              <button class="btn">Find Vendors</button>
+              <Link to="/service">
+                <button class="btn home-btn">Find Vendors</button>
+              </Link>
             </form>
           </div>
         </div>

@@ -91,7 +91,7 @@ ul {
   padding: 14px 28px;
   background: white;
   border: 1px solid #2e2e2e;
-  color: #fff;
+  color: #1a1a1a;
 }
 .subscribe-form button {
   position: absolute;
@@ -106,6 +106,13 @@ ul {
   font-size: 22px;
   transform: rotate(-6deg);
 }
+.subscribe-form ::placeholder {
+  color: #1a1a1a;
+}
+.subscribe-form :placeholder-shown {
+  color: #1a1a1a;
+}
+
 .copyright-area {
   background: #d80032;
   padding: 25px 0;

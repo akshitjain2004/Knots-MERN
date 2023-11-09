@@ -102,6 +102,10 @@
   transition: 0.3s;
 }
 
+.home-btn{
+  margin-top: 63px;
+  
+}
 .header__form {
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.5);

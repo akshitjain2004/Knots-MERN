@@ -40,7 +40,7 @@ class Navbar extends Component {
                 <Link to="/contact">Contact </Link>
               </li>
               <li>
-                <a href="#contact">Sign In</a>
+                <Link to="/signin">Sign In</Link>
               </li>
             </ul>
           </div>

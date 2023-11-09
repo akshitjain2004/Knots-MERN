@@ -1,0 +1,92 @@
+.heading{
+    text-align: center;
+}
+.text-head{
+    text-align: center;
+}
+.box{
+    border: 2px ;
+    width: 362px;
+    padding: 7px;
+    height: 360px;
+
+
+}
+.text{
+    text-align: center;
+}
+.box:hover{
+    transform: scale(1.02);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+     
+}
+.grid{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    position: relative;
+    left: 55px;
+    height: 900px;
+}
+.img1 {
+    width: 340px;
+    height: 200px;
+}
+.locimg{
+    height: 30px;
+    width: 30px;
+}
+.location{
+    position: relative;
+    position: relative;
+    left: 30px;
+    top: -33px;
+}
+.eye{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    bottom: 20px;
+    left: 6px;
+}
+.view{
+    position: relative;
+    bottom: 48px;
+    left: 30px;
+
+}
+.hr{
+    position: relative;
+    bottom: 40px;
+}
+.rup{
+    position: relative;
+    bottom: 40px;
+
+}
+.rupees{
+    position: relative;
+    bottom: 85px;
+    left:55px;
+}
+.rating{
+    border: 2px solid;
+    position: relative;
+    bottom: 112px;
+    width: 90px;
+    height: 30px;
+    padding: 3px;
+    left: 222px;
+    border-radius: 20px;
+}
+.rt{
+    position: relative;
+    bottom: 28px;
+    left: 38px;
+    color: green;
+
+}
+.star{
+    height: 20px;
+    width: 20px;
+}

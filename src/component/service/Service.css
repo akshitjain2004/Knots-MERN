@@ -1,0 +1,32 @@
+
+.box-sevice{
+    border: 2px ;
+    padding: 20px;
+    width: 362px;
+    border: 2px;
+    padding: 22px;
+    width: 362px;
+    /* border: 3px solid; */
+    height: 257px;
+
+}
+.text{
+    text-align: center;
+}
+.box-service:hover{
+    transform: scale(1.02);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+     
+}
+.grid-service{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    position: relative;
+    left: 55px;
+    height: 620px;
+}
+.img1 {
+    width: 340px;
+    height: 200px;
+}
