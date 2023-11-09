@@ -3,7 +3,6 @@ import homeimg from "../../assets/final.webp";
 import "./Home.css";
 import Review from "../testimonial/Review";
 import About from "../about/About";
-import Service from "../service/Service";
 import { Link } from "react-router-dom";
 function Home() {
   return (
