@@ -1,0 +1,46 @@
+/* form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.signup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.btn {
+  margin-top: 30px;
+  width: 90%;
+  max-width: 200px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 3px;
+  /* padding: 20px; */
+  background: linear-gradient(to right, rgba(255, 0, 106), rgba(255, 67, 61));
+}
+
+.btn:hover {
+  background: #f12711;
+  background: -webkit-linear-gradient(to right, #f12711, #f5af19);
+  background: linear-gradient(to right, #f12711, #f5af19);
+}
+
+.signup-btn {
+  width: 200px;
+}
+
+.wrapper form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+label {
+  z-index: 2;
+  display: block;
+  margin: 10px 0;
+}
