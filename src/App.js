@@ -8,6 +8,8 @@ import React, { Fragment } from "react";
 import Service from "./component/service/Service";
 import Vendors from "./component/service/vendors/vendors";
 import Ambrosia from "./component/service/vendors/ambrosia/Ambrosia";
+import Login from "./component/login/Login";
+import Signup from "./component/signup/Signup";
 function App() {
   return (
     <>
@@ -15,11 +17,13 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Home />} /> 
+          <Route path="/" element={<Home />} />
           <Route path="/service" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/service/vendors" element={<Vendors/>} />
-          <Route path="/service/vendors/Ambrosia" element={<Ambrosia/>} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/service/vendors" element={<Vendors />} />
+          <Route path="/service/vendors/Ambrosia" element={<Ambrosia />} />
         </Routes>
         <Footer />
       </Router>
