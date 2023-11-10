@@ -1,26 +1,29 @@
 import React, { useState } from "react";
 import "./Signup.css";
+import { auth } from "../../firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const Register = (e) => {
     e.preventDefault();
-    // Regular expression for validating an Email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!emailRegex.test(email)) {
-      alert("Invalid email address. Please enter a valid email.");
-      return;
-    }
-    // Perform signup logic here, e.g., send data to API
-    console.log("Sign Up submitted:", email, password);
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        if (auth) {
+          console.log(userCredential);
+          alert("You're signed up. You can log in now !!");
+        }
+      })
+      .catch((error) => alert(error.message));
   };
 
   return (
     <div className="wrapper">
       <h1>Sign Up</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={Register}>
         <div className="innercontent">
           <label>Email</label>
           <input
@@ -37,7 +40,7 @@ const Signup = () => {
             required
           />
         </div>
-        <button type="submit" className="btn">
+        <button onClick={Register} type="submit" className="btn">
           Sign Up
         </button>
       </form>

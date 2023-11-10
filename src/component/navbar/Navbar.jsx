@@ -1,4 +1,6 @@
-import React, { Component } from "react";
+import React, {useEffect, useState, Component } from "react";
+import { auth } from "firebase/auth";
+
 import "./Navbar.css";
 import {
   BrowserRouter as Router,
@@ -8,6 +10,7 @@ import {
   Link,
 } from "react-router-dom";
 class Navbar extends Component {
+
   state = { clicked: false };
   handleClick = () => {
     this.setState({

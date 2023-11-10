@@ -1,28 +1,29 @@
 import React, { useState } from "react";
 import "./login.css";
 import { Link } from "react-router-dom";
+import { auth } from "../../firebase";
+import {signInWithEmailAndPassword} from "firebase/auth"
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const signIn = (e) => {
     e.preventDefault();
-    // Regular expression for validating an Email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!emailRegex.test(email)) {
-      alert("Invalid email address. Please enter a valid email.");
-      return;
-    }
-    // Perform login logic here, e.g., send data to API
-    console.log("Login submitted:", email, password);
+   
+    signInWithEmailAndPassword(auth,email, password)
+      .then((userCredential) => {
+        console.log(userCredential)
+        alert("Successfully signed in");
+      })
+      .catch((error) => alert(error.message));
   };
 
   return (
     <div className="wrapper">
       <h1>Sign in</h1>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={signIn}>
         <div className="innercontent">
           <label>Email</label>
           <input
@@ -39,7 +40,7 @@ const Login = () => {
             required
           />
         </div>
-        <button className="btn" type="submit">
+        <button onClick={signIn} className="btn" type="submit">
           Sign in
         </button>
       </form>
