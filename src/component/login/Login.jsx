@@ -1,20 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./login.css";
-import { Link } from "react-router-dom";
-import { auth } from "../../firebase";
-import {signInWithEmailAndPassword} from "firebase/auth"
+import { Link, useNavigate } from "react-router-dom";
+import { auth, db } from "../../firebase";
+import { signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { SigninContext } from "../../App";
 
 const Login = () => {
+  const { signedIn, setSignedIn } = useContext(SigninContext);
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  console.log(signedIn);
+
+  if (signedIn) {
+    signOut(auth);
+    setSignedIn(false);
+  }
   const signIn = (e) => {
     e.preventDefault();
-   
-    signInWithEmailAndPassword(auth,email, password)
+
+    signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        console.log(userCredential)
-        alert("Successfully signed in");
+        setSignedIn(true);
+        navigate("/");
+        console.log(userCredential);
+
+        // alert("Successfully signed in");
       })
       .catch((error) => alert(error.message));
   };
