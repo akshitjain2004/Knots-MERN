@@ -1,0 +1,86 @@
+.home-feature {
+  margin: 5rem 0rem;
+  background-color: #d80032;
+}
+
+.hf-feature header {
+  text-align: center;
+}
+
+.home-feature h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.home-feature p {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.hfcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+
+.hfcard {
+
+  background-image: url('../../assets/final.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  background-color: #eee; /* Choose a suitable color */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20rem;
+  height: 18rem;
+
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  margin-bottom: 4rem;
+  /* Add any other styles you want for your hfcard */
+}
+
+/* Add this CSS if you want to style the buttons inside the hfcard */
+.hfcard .btn-feature {
+  /* Add your button styling here */
+  background-color: #3498db; /* Example button color */
+  color: #fff; /* Example text color */
+  /* Add any other button styles you want */
+}
+
+@media (orientation: landscape) {
+  .about h1 {
+    font-size: 4rem;
+  }
+}
+
+.btn-feature {
+  margin-top: 40px;
+  width: 90%;
+  max-width: 200px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 3px;
+  /* padding: 20px; */
+  background: linear-gradient(to right, rgba(255, 0, 106), rgba(255, 67, 61));
+}
+
+.btn-feature:hover {
+  background: #f12711;
+  background: -webkit-linear-gradient(to right, #f12711, #f5af19);
+  background: linear-gradient(to right, #f12711, #f5af19);
+}

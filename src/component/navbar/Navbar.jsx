@@ -35,7 +35,7 @@ const Navbar = () => {
             // className={this.state.clicked ? "#navbar active" : "#navbar"}
           >
             <li>
-              <Link to="/service">Vendors</Link>
+              <Link to="/service">Our Services</Link>
             </li>
 
             <li>

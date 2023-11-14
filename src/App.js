@@ -10,7 +10,7 @@ import Vendors from "./component/service/vendors/vendors";
 import Ambrosia from "./component/service/vendors/ambrosia/Ambrosia";
 import Login from "./component/login/Login";
 import Signup from "./component/signup/Signup";
-
+import Cards from "./component/feature/card";
 export const SigninContext = createContext();
 function App() {
   const [signedIn, setSignedIn] = useState(false);
@@ -27,6 +27,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/signin" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/cards" element={<Cards />} />
             <Route path="/service/vendors" element={<Vendors />} />
             <Route path="/service/vendors/Ambrosia" element={<Ambrosia />} />
           </Routes>

@@ -4,6 +4,8 @@ import "./Home.css";
 import Review from "../testimonial/Review";
 import About from "../about/About";
 import { Link } from "react-router-dom";
+import Homefeature from "../homefeature/Homefeature";
+
 function Home() {
   return (
     <>
@@ -55,8 +57,12 @@ function Home() {
         <About />
       </section>
       <section>
+        <Homefeature/>
+      </section>
+      <section>
         <Review />
       </section>
+     
     </>
   );
 }
