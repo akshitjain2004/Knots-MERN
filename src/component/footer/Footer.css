@@ -1,3 +1,12 @@
+#footer {
+  bottom: 0;
+  color: #707070;
+  height: 2em;
+  left: 0;
+  position: relative;
+  font-size: small;
+  width: 100%;
+}
 ul {
   margin: 0px;
   padding: 0px;
@@ -131,7 +140,7 @@ ul {
   margin-left: 20px;
 }
 .footer-menu li:hover a {
-  color: #d80032;
+  color: #1a1a1a;
 }
 .footer-menu li a {
   font-size: 14px;

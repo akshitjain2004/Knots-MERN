@@ -1,16 +1,17 @@
-.about {
+.howitworks {
   margin: 2rem 1rem;
+ 
 }
 
-.about header {
+.howitworks header {
   text-align: center;
 }
 
-.about h1 {
+.howitworks h1 {
   font-size: 1rem;
 }
 
-.about p {
+.howitworks p {
   width: 75%;
   margin: 0 auto;
 }
@@ -23,7 +24,7 @@
   margin-top: 2rem;
 }
 
-.card {
+.card-hf {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -39,14 +40,14 @@
     0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
-.card i {
+.card-hf i {
   font-size: 3rem;
   color: #d80032;
   margin-bottom: 1rem;
 }
 
 @media (orientation: landscape) {
-  .about h1 {
+  .howitworks h1 {
     font-size: 4rem;
   }
 }

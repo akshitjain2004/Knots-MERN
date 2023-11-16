@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./card.css";
-import wed from "../../assets/vecteezy_indian-wedding-couple-character-bride-and-groom_12011841_610.png";
+import wed from "../../../assets/vecteezy_indian-wedding-couple-character-bride-and-groom_12011841_610.png";
 
 function Cards() {
   const [message, setMessage] = useState("");

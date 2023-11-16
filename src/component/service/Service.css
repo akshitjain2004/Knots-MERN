@@ -1,5 +1,14 @@
-
-.box-sevice{
+.servicepage{
+    background-color: #fff;
+}
+.heading-ser{
+    text-align: center;
+}
+.text-head{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.box-ser{
     border: 2px ;
     padding: 20px;
     width: 362px;
@@ -8,23 +17,29 @@
     width: 362px;
     /* border: 3px solid; */
     height: 257px;
+    border: 1px solid #1a1a1a;
 
 }
 .text{
     text-align: center;
+   
+    font-size: 15px;
+    font-weight: 500;
 }
-.box-service:hover{
+
+
+.box-ser:hover{
     transform: scale(1.02);
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
      
 }
-.grid-service{
+.srgrid{
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
     position: relative;
     left: 55px;
-    height: 620px;
+    height: 820px;
 }
 .img1 {
     width: 340px;

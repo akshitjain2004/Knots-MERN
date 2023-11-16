@@ -40,9 +40,7 @@ const Footer = () => {
             <div class="row">
               <div class="col-xl-4 col-lg-4 mb-50">
                 <div class="footer-widget">
-                  <div class="footer-logo">
-
-                  </div>
+                  <div class="footer-logo"></div>
                   <div class="footer-text">
                     <p>
                       Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
@@ -52,21 +50,19 @@ const Footer = () => {
                   </div>
                   <div class="footer-social-icon">
                     <span>Follow us</span>
-                    <a href="#">
+                    <a href="https://www.facebook.com/">
                       <i class="fab fa-facebook-f facebook-bg"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://twitter.com/home?lang=en">
                       <i class="fab fa-twitter twitter-bg"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://google.com/">
                       <i class="fab fa-google-plus-g google-bg"></i>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-         
-              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30"></div>
               <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
                 <div class="footer-widget">
                   <div class="footer-widget-heading">
@@ -98,7 +94,7 @@ const Footer = () => {
                 <div class="copyright-text">
                   <p>
                     Copyright &copy; 2023, All Right Reserved{" "}
-                    <a href="#">Knots</a>
+                    <a href="/">Knots</a>
                   </p>
                 </div>
               </div>
@@ -106,19 +102,19 @@ const Footer = () => {
                 <div class="footer-menu">
                   <ul>
                     <li>
-                      <a href="#">Home</a>
+                      <a href="/">Home</a>
                     </li>
                     <li>
-                      <a href="#">Terms</a>
+                      <a href="/">Terms</a>
                     </li>
                     <li>
-                      <a href="#">Privacy</a>
+                      <a href="/">Privacy</a>
                     </li>
                     <li>
-                      <a href="#">Policy</a>
+                      <a href="/">Policy</a>
                     </li>
                     <li>
-                      <a href="#">Contact</a>
+                      <a href="/contact">Contact</a>
                     </li>
                   </ul>
                 </div>

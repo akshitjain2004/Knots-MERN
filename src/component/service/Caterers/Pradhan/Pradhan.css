@@ -1,0 +1,265 @@
+
+body{
+    background-color: rgb(234, 234, 234);
+}
+
+.hheading{
+    position: relative;
+    top: 10px;
+    right: 655px;
+
+}
+.imgloc{
+    position: relative;
+    left:  -392px;;
+    top: 110px;
+
+}
+.loc{
+    position: relative;
+    bottom: -68px;;
+    left: 60px;
+    
+}
+.locpic{
+    position: relative;
+    bottom: 100px;
+    left: 1200px;
+    height: 200px;
+    width: 300px;
+}
+.number{
+    position: relative;
+    left: 1300px;
+    bottom: 60px;
+    left: 930px;
+}
+.visicon{
+    position: relative;
+    left:  870px;
+    bottom: 20px;
+}
+
+.icon{
+    color: white;
+    text-align: center;
+}
+.love{
+    height: 30px;
+    width: 30px;
+    color: white;
+}
+.overview{
+border: 2px solid;
+width: 80%;
+border-radius: 15px;
+position: relative;
+left: 165px;
+background-color: white;
+top :25px;
+padding: 20px;
+height: 280px;
+}
+.vegbutton{
+    border: 1px solid;
+    padding: 3px;
+    background-color: rgb(23, 143, 103);
+    width:200px;
+    position: relative;
+    left: 200px;
+    top: 35px;
+}
+.vegbutton:hover{
+    transform: scale(1.02);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}    
+.nonvegbutton{
+    border: 1px solid;
+    padding: 3px;
+    background-color: rgb(201, 42, 14);
+    width:200px;
+    position: relative;
+    left: 800px;
+    bottom:20px;
+}
+.nonvegbutton:hover{
+    transform: scale(1.02);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.about{
+    border: 2px solid;
+    width: 80%;
+    border-radius: 15px;
+    position: relative;
+    left: 150px;
+    padding: 20px;
+    background-color: white;
+    top: 40px;
+    height: 287px;
+    }
+.abhead{
+        font-size: 25px;
+
+    }
+.grid{
+        display: grid;
+        grid-template-columns:2fr 2fr;
+        height: 300px;
+    }
+.specification{
+    border: 2px solid;
+    width: 50%;
+    border-radius: 15px;
+    position: relative;
+    left: 160px;
+    padding: 20px;
+    background-color: white;
+    top: 50px;
+    }
+.tick{
+    height: 20px;
+    width: 20px;
+}
+
+.ambody{
+    height: 2400px;
+}
+.ambody1{
+    height: 2600px;
+}
+.spec{
+    border: 2px solid;
+    width: 80%;
+    border-radius: 15px;
+    position: relative;
+    left: 150px;
+    padding: 20px;
+    background-color: white;
+    top: 100px;
+    height: 287px;
+}
+.rating{
+    border: 2px solid;
+    width: 80%;
+    border-radius: 15px;
+    position: relative;
+    left: 150px;
+    padding: 20px;
+    background-color: white;
+    top: 150px;
+    height: 287px;
+}
+.rrr{
+    position: relative;
+    left: 515px;
+    left: 575px;
+    top: 50px;
+}.kk{
+    position: relative;
+    left: 682px;
+    
+    bottom: 50px;
+}
+.weblovc{
+    position: relative;
+    left: 1200px;
+    height: 300px;
+    width: 400px;
+}
+.grif{
+    position: relative;
+    border: 1px solid;
+}
+.jk{
+    position: relative;
+   
+    top: 5px;
+}
+.spec1{
+    border: 2px solid;
+    width: 80%;
+    border-radius: 15px;
+    position: relative;
+    left: 150px;
+    padding: 20px;
+    background-color: white;
+    top: 100px;
+    height: 450px;
+}
+.wrong1{
+position: relative;
+left: 30px;
+bottom: 50px;
+left: 157px;
+    bottom: 20px;
+    height: 34px;
+}
+.wil{
+    position: relative;
+    top: 10px;
+}
+.specification1{
+    border: 2px solid;
+    width: 50%;
+    border-radius: 15px;
+    position: relative;
+    left: 160px;
+    padding: 20px;
+    background-color: white;
+    top: 80px;
+    height: 300px;
+}
+.jk1{
+    position: relative;
+   
+    top: 5px;
+    height: 100px;
+}
+.like1{
+    border: 3px;
+    width: 180px;
+    background-color: red;
+    position: relative;
+    bottom: 138px;
+    border-radius: 10px;
+    left: 900px;
+    bottom: 149px;
+    border-radius: 10px;
+    left: 1300px;
+}
+.visicon1 {
+    position: relative;
+    left: 1194px;
+    bottom: 15px;
+}
+.number1 {
+    position: relative;
+    left: 1300px;
+    bottom: 56px;
+    left: 1251px;
+}
+.imgloc1 {
+    position: relative;
+    left: 1054px;
+    top: 118px;
+    top: 135px;
+}
+.loc1 {
+    position: relative;
+    bottom: -24px;
+    left: 1518px;
+}
+.cartf{
+    cursor: pointer;
+    border: none;
+    border: 2px solid;
+    outline: none;
+    border-radius: 15px;
+    height: 75px;
+    width: 201px;
+    position: relative;
+    left: 60px;
+    bottom: 30px;
+}

@@ -47,7 +47,7 @@ function Home() {
                 </select>
               </div>
               <Link to="/service">
-                <button class="btn home-btn">Find Vendors</button>
+                <button class="btnn home-btn">Find Vendors</button>
               </Link>
             </form>
           </div>

@@ -1,27 +1,32 @@
-.heading{
+.vendorspage{
+    background-color: #fff;
+}
+.heading-ven{
     text-align: center;
+    
 }
 .text-head{
     text-align: center;
 }
-.box{
+.box-ven{
     border: 2px ;
     width: 362px;
     padding: 7px;
     height: 360px;
+    border: 1px solid #1a1a1a;
 
 
 }
 .text{
     text-align: center;
 }
-.box:hover{
+.box-ven:hover{
     transform: scale(1.02);
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
      
 }
-.grid{
+.vgrid{
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
     position: relative;
@@ -69,24 +74,31 @@
     bottom: 85px;
     left:55px;
 }
-.rating{
+.rrating{
     border: 2px solid;
+    width: 80%;
+    border-radius: 15px;
     position: relative;
-    bottom: 112px;
-    width: 90px;
-    height: 30px;
-    padding: 3px;
-    left: 222px;
-    border-radius: 20px;
+    left: 215px;
+    padding: 17px;
+    background-color: white;
+    top: -116px;
+    height: 38px;
+    width: 113px;
 }
-.rt{
+.rrt{
     position: relative;
-    bottom: 28px;
+    bottom: 37px;
     left: 38px;
     color: green;
+    position: relative;
+    bottom: 35px;
 
 }
-.star{
+.sstar{
     height: 20px;
     width: 20px;
+    position: relative;
+    bottom: 10px;
 }
+

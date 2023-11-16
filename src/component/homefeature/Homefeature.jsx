@@ -10,11 +10,11 @@ function Homefeature() {
       </header>
       <div className="hfcontainer">
         <div className="hfcard">
-     
+     <Link to='/budgetCalc'>
           <button className="btn-feature">
             <span>Budget Calculator</span>
           </button>
-       
+          </Link>
         </div>
 
         <div className="hfcard">

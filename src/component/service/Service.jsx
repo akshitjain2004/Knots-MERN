@@ -8,54 +8,59 @@ import "./Service.css";
 import { Link } from "react-router-dom";
 function Service() {
   return (
-    <div>
-      <div className="service-text">
-      <h1 className="heading">Vendors by Category</h1>
+    <div className="servicepage">
+      <h1 className="heading-ser">Vendors by Category</h1>
       <p className="text-head">
         Browse vendors here by their categories like wedding lawns, marriage
         gardens, photographers, bridal wear, makeup artists and many more with
         Shaadiyari.
-      </p></div>
-      <div className="grid">
-        <div className="box">
-          <Link to="/service/vendors" className="text">
+      </p>
+      <div className="srgrid">
+        <div className="box-ser">
+          <Link to="/service/vendors" className="text-ser">
             <div className="imgbor">
               <div className="img">
-                <img src={img1} className="img1" alt=""></img>
-                <div>Wedding venues </div>
+                <img src={img1} className="img1"></img>
+                <div className="text">Wedding venues</div>
               </div>
             </div>
           </Link>
         </div>
 
-        <div className="box">
-          <div className="imgbor">
-            <div className="img">
-              <img src={img2} className="img1" alt=""></img>
-              <div className="text">Wedding Caterers </div>
+        <div className="box-ser">
+          <Link to="/service/Caterers">
+            <div className="imgbor">
+              <div className="img">
+                <img src={img2} className="img1" alt=""></img>
+                <div className="text">Wedding Caterers </div>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
 
-        <div className="box">
-          <div className="imgbor">
-            <div className="img">
-              <img src={img3} className="img1" alt=""></img>
-              <div className="text">Wedding Photographer </div>
+        <div className="box-ser">
+          <Link to="/service/photo">
+            <div className="imgbor">
+              <div className="img">
+                <img src={img3} className="img1" alt=""></img>
+                <div className="text">Wedding Photographer </div>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
 
-        <div className="box">
-          <div className="imgbor">
-            <div className="img">
-              <img src={img4} className="img1" alt=""></img>
-              <div className="text">Wedding Cards </div>
+        <div className="box-ser">
+          <Link to="/service/card">
+            <div className="imgbor">
+              <div className="img">
+                <img src={img4} className="img1" alt=""></img>
+                <div className="text">Wedding Cards </div>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
 
-        <div className="box">
+        <div className="box-ser">
           <div className="imgbor">
             <div className="img">
               <img src={img5} className="img1" alt=""></img>
@@ -64,7 +69,7 @@ function Service() {
           </div>
         </div>
 
-        <div className="box">
+        <div className="box-ser">
           <div className="imgbor">
             <div className="img">
               <img src={img6} className="img1" alt=""></img>

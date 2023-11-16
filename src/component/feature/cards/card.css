@@ -44,7 +44,7 @@ button {
 }
 
 .text-f {
-  background-image: url("../../assets/newinvite.avif");
+  background-image: url("../../../assets/newinvite.avif");
   object-fit: contain;
   width: 50%;
   height: 80vh;
