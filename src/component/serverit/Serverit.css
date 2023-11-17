@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+.container1{
+    padding: 10px;
+   
+    max-width: 700px;
+    margin: auto;
+    margin: 20px auto;
+}
+.btn1{
+    border: none;
+    padding: 7px 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    
+    
+}
+.btn1-add{
+    background-color:rgb(75, 123, 157) ;
+    cursor: pointer;
+}
+.des1{
+    height: 200px;
+}
+.sub11{
+    background: none;
+    border: 2px solid;
+    background-color: rgb(90, 227, 90);
+    position: relative;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    left: 250px;
+
+}
+.btn1-add:hover{
+    transform: scale(1.02);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.sub11:hover{
+    transform: scale(1.02);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.close-btn1{
+   position: relative;
+   left: 600px;
+
+}
+
+
+.close-btn2{
+border: 2px solid;
+height: 30px;
+width: 30px;
+border-radius: 10px;
+background-color: rgb(255, 0, 0);
+color: black;
+cursor: pointer;
+
+}
+.tableContainer11{
+    margin-top:50px ;
+    position: relative;
+    right: 400px;
+   
+}
+.tableContainer11 table thead tr{
+    text-align: center;
+    width: 50px;
+} 
+.tableContainer11 table tbody tr{
+    text-align: center;
+    height: 50px;
+    
+    
+}
+.tableContainer11 table thead tr th{
+    min-width: 120px;
+    background-color: red;
+    color: black;
+    padding: 5px;
+    
+
+    }
+

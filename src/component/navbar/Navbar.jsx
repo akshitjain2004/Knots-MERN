@@ -39,7 +39,7 @@ const Navbar = () => {
             </li>
 
             <li>
-              <a href="#destination">Destination Wedding </a>
+              <Link to="/mybooking">Your Bookings</Link>
             </li>
             <li>
               <a href="#about">About Us</a>

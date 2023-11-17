@@ -2,15 +2,18 @@
     text-align: center;
     
 }
+.weddingcard{
+    background-color: white;
+}
 .text-head{
     text-align: center;
 }
-.box-card{
+.box{
     border: 2px ;
     width: 362px;
     padding: 7px;
     height: 360px;
-
+    border: 1px solid #1a1a1a;
 
 }
 .text{

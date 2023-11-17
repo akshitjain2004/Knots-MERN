@@ -37,6 +37,8 @@ import BudgetCalc from "./component/feature/budgetcalci/BudgetCalc";
 import Invite from "./component/feature/cards/card";
 import Login from "./component/login/Login";
 import Signup from "./component/signup/Signup";
+import Serverit from "./component/serverit/Serverit";
+
 export const SigninContext = createContext();
 function App() {
   const [signedIn, setSignedIn] = useState(false);
@@ -48,6 +50,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/mybooking" element={<Serverit/>} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/service" element={<Service/>} />
           <Route path="/service/vendors" element={<Vendors/>} />
@@ -76,8 +79,9 @@ function App() {
           <Route path="/cards" element={<Invite/>}/>
           <Route path="/signin" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/server" element={<Serverit/>} />
         </Routes>
-        <Footer />
+     
       </Router>
       </SigninContext.Provider>
     </>

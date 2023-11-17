@@ -16,7 +16,7 @@ import { Link } from "react-router-dom"
 function Photo(){
     return(
         
-        <div>
+        <div className="photopgraphy">
             <h1 className="heading">Wedding Photographers in India</h1>
             <div className='vgrid'>
         <div className='box'>
