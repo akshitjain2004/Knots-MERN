@@ -5,8 +5,8 @@ function Review() {
 
   return (
     <section class="review-section">
-        <center>
-      <h2 class="line-title">Testimonials</h2></center>
+     
+    <div className='heading '> <h1>Testimonials</h1>  </div>
       <div className="boxiboxi">
       <div class="owl-carousel custom-carousel owl-theme">
         <div

@@ -26,63 +26,69 @@ import Bandhancard from "./component/service/Cards/bandhancard/Bandhancard";
 import Badhai from "./component/service/Cards/bandhancard/Badahai";
 import Madam from "./component/service/Cards/bandhancard/madam";
 import Indian from "./component/service/Cards/bandhancard/indian";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom";
-import React, { Fragment ,createContext, useState} from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { Fragment, createContext, useState } from "react";
 import Service from "./component/service/Service";
 import BudgetCalc from "./component/feature/budgetcalci/BudgetCalc";
 import Invite from "./component/feature/cards/card";
 import Login from "./component/login/Login";
 import Signup from "./component/signup/Signup";
 import Serverit from "./component/serverit/Serverit";
-
+import Booked from "./component/booked/Booked";
+import Error from "./component/error/Error"
 export const SigninContext = createContext();
 function App() {
   const [signedIn, setSignedIn] = useState(false);
   return (
     <>
-     <SigninContext.Provider value={{ signedIn, setSignedIn }}>
-      <Router>
-        <Navbar />
+      <SigninContext.Provider value={{ signedIn, setSignedIn }}>
+        <Router>
+          <Navbar />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/mybooking" element={<Serverit/>} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/service" element={<Service/>} />
-          <Route path="/service/vendors" element={<Vendors/>} />
-          <Route path="/service/vendors/Ambrosia" element={<Ambrosia/>} />
-          <Route path="/service/vendors/vrindwoods" element={<VrindWoods/>} />
-          <Route path="/service/vendors/markhotel" element={<Markhotel/>} />
-          <Route path="/service/vendors/HyattCentric" element={<Hyatt/>} />
-          <Route path="/service/vendors/KadambResort" element={<Kadamb/>} />
-          <Route path="/service/vendors/Jalsa" element={<Jalsa/>} />
-          <Route path="/service/Caterers" element={<Caterers/>} />
-          <Route path="/service/Caterers/Pradhan" element={<Pradhan/>} />
-          <Route path="/service/Caterers/Milan" element={<Milan/>} />
-          <Route path="/service/Caterers/Patel" element={<Patel/>} />
-          <Route path="/service/Caterers/Kum" element={<Kum/>} />
-          <Route path="/service/photo" element={<Photo/>} />
-          <Route path="/service/photo/lakshmi" element={<Lakshmi/>} />
-          <Route path="/service/photo/Flash" element={<Flash/>} />
-          <Route path="/service/photo/Bandhan" element={<Bandhan/>} />
-          <Route path="/service/photo/safar" element={<Safar/>} />
-          <Route path="/service/card" element={<Card/>} />
-          <Route path="/service/card/bhandhancard" element={<Bandhancard/>} />
-          <Route path="/service/card/badhai" element={<Badhai/>} />
-          <Route path="/service/card/Mdam" element={<Madam/>} />
-          <Route path="/service/card/indian" element={<Indian/>} />
-          <Route path="/budgetCalc" element={<BudgetCalc/>}/>
-          <Route path="/cards" element={<Invite/>}/>
-          <Route path="/signin" element={<Login />} />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/mybooking" element={<Serverit />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/service" element={<Service />} />
+            <Route path="/service/vendors" element={<Vendors />} />
+            <Route path="/service/vendors/Ambrosia" element={<Ambrosia />} />
+            <Route
+              path="/service/vendors/vrindwoods"
+              element={<VrindWoods />}
+            />
+            <Route path="/service/vendors/markhotel" element={<Markhotel />} />
+            <Route path="/service/vendors/HyattCentric" element={<Hyatt />} />
+            <Route path="/service/vendors/KadambResort" element={<Kadamb />} />
+            <Route path="/service/vendors/Jalsa" element={<Jalsa />} />
+            <Route path="/service/Caterers" element={<Caterers />} />
+            <Route path="/service/Caterers/Pradhan" element={<Pradhan />} />
+            <Route path="/service/Caterers/Milan" element={<Milan />} />
+            <Route path="/service/Caterers/Patel" element={<Patel />} />
+            <Route path="/service/Caterers/Kum" element={<Kum />} />
+            <Route path="/service/photo" element={<Photo />} />
+            <Route path="/service/photo/lakshmi" element={<Lakshmi />} />
+            <Route path="/service/photo/Flash" element={<Flash />} />
+            <Route path="/service/photo/Bandhan" element={<Bandhan />} />
+            <Route path="/service/photo/safar" element={<Safar />} />
+            <Route path="/service/card" element={<Card />} />
+            <Route
+              path="/service/card/bhandhancard"
+              element={<Bandhancard />}
+            />
+            <Route path="/service/card/badhai" element={<Badhai />} />
+            <Route path="/service/card/Mdam" element={<Madam />} />
+            <Route path="/service/card/indian" element={<Indian />} />
+            <Route path="/budgetCalc" element={<BudgetCalc />} />
+            <Route path="/cards" element={<Invite />} />
+            <Route path="/signin" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/server" element={<Serverit/>} />
-        </Routes>
-     
-      </Router>
+            <Route path="/server" element={<Serverit />} />
+          <Route path="/booked" element={<Booked />} />
+          
+
+          </Routes>
+          <Footer />
+        </Router>
       </SigninContext.Provider>
     </>
   );

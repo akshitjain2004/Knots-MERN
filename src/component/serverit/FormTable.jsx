@@ -1,9 +1,11 @@
 import React from "react";
 import "../serverit/Serverit.css";
 import { IoMdClose } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const FormTable = ({ handlesubmit, handleOnChange, handleclose, rest }) => {
     return (
+        
         <div className="addcontainer1">
             <form onSubmit={handlesubmit}>
                 <div className="close-btn1" onClick={handleclose}>
@@ -13,6 +15,8 @@ const FormTable = ({ handlesubmit, handleOnChange, handleclose, rest }) => {
                 <input type="text" id="name" name="name" onChange={handleOnChange} value={rest.name} />
                 <label htmlFor="email">Email:</label>
                 <input type="email" id="email" name="email" onChange={handleOnChange} value={rest.email} />
+                <label htmlFor="name">Vendor Name: </label>
+                <input type="text" id="vendorsname" name="vendorsname" onChange={handleOnChange} value={rest.vendorsname} />
                 <label htmlFor="numberofguests">No of guests expected:</label>
                 <input
                     type="number"
@@ -35,9 +39,11 @@ const FormTable = ({ handlesubmit, handleOnChange, handleclose, rest }) => {
                     onChange={handleOnChange}
                     value={rest.otherrequirements}
                 />
-                <button className="sub11">Submit</button>
+          <button type="submit" className="sub11">   Submit</button>
+           
             </form>
         </div>
+     
     );
 };
 

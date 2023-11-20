@@ -6,7 +6,7 @@ function About() {
   return (
     <section className="howitworks">
       <header>
-        <h1>HOW THIS WORKS?</h1>
+        <div className="heading"><h1>HOW THIS WORKS?</h1></div>
         <p>
           Found the one? Let us make it easy for you to plan your wedding so you
           dont have to end up in tears.

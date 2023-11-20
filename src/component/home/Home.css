@@ -27,6 +27,11 @@
   object-fit: cover;
 }
 
+.header__form .headingx h2{
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
 .homeContent {
   width: 100%;
   height: max-content;
@@ -43,10 +48,11 @@
   .textDiv {
     padding: 2rem 0;
     .smalltext {
+
       font-size: 20px;
       font-weight: 800;
       text-transform: uppercase;
-      color: #4b4849;
+      color: #fff;
     }
 
     .hometitle {
@@ -87,7 +93,9 @@
   cursor: pointer;
   transition: 0.3s;
 }
-.btn {
+
+
+.btnn {
   margin-top: 22px;
   padding: 0.57rem 1.5rem;
   outline: none;
@@ -95,15 +103,18 @@
   font-size: 1rem;
   font-weight: 600;
   white-space: nowrap;
-  color: var(--white);
+  color: white;
   background-color: var(--primary-color);
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+
 }
 
 .home-btn{
   margin-top: 63px;
+  padding: 0.57rem 1.5rem;
+  
   
 }
 .header__form {

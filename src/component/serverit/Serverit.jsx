@@ -4,6 +4,10 @@ import "./Serverit.css"
 import { IoMdClose } from "react-icons/io";
 import  axios  from "axios";
 import FormTable from "./FormTable";
+import { Link } from "react-router-dom";
+
+
+// Inside your component
 
 axios.defaults.baseURL="http://localhost:8080/"
 function Serverit(){
@@ -12,7 +16,7 @@ function Serverit(){
     const [formData,setFormData]=useState({
         name:"",
         email:"",
-        mobile:"",
+        vendorsname:"",
         numberofguests:"",
         Foodtype:"",
         Date:"",
@@ -22,7 +26,7 @@ function Serverit(){
     const [formDataEdit,setFormDataEdit]=useState({
         name:"",
         email:"",
-        mobile:"",
+        vendorsname:"",
         numberofguests:"",
         Foodtype:"",
         Date:"",
@@ -54,6 +58,7 @@ function Serverit(){
 
 
     const handlesubmit =async(e)=>{
+        
         e.preventDefault()
         const data=await axios.post("/create",formData)
         console.log(data)
@@ -61,6 +66,9 @@ function Serverit(){
             setAddSection(false)
             alert(data.data.message)
             getFetchData()
+            //after submimting to redirect to new page
+            window.location = '/booked';
+          
         }
 
     }
@@ -109,8 +117,9 @@ setEditSection(true)
 }
 
     return(
+        <center>
         <div className="container1">
-            <button className="btn1 btn1-add" onClick={()=>setAddSection(true)}>Add</button>
+            <button className="btn1 btn1-add" onClick={()=>setAddSection(true)}>Book Now</button>
             {
                 addSection &&(
                     <FormTable
@@ -138,6 +147,7 @@ setEditSection(true)
                         <tr>
                             <th>Name</th>
                             <th>Email id</th>
+                            <th>Vendors Name</th>
                             <th>No of Guests</th>
                             <th>Food Type</th>
                             <th>From-to</th>
@@ -156,6 +166,7 @@ setEditSection(true)
                                     <tr>
                                         <td>{el.name}</td>
                                         <td>{el.email}</td>
+                                        <td>{el.vendorsname}</td>
                                         <td>{el.numberofguests}</td>
                                         <td>{el.Foodtype}</td>
                                         <td>{el.Date}</td>
@@ -178,7 +189,7 @@ setEditSection(true)
             </div>
          
         </div>
-       
+        </center>
         
     )
 }

@@ -5,7 +5,8 @@ import Review from "../testimonial/Review";
 import About from "../about/About";
 import { Link } from "react-router-dom";
 import Homefeature from "../homefeature/Homefeature";
-
+import Faq from "../faqs/Faq";
+import Contributors from "../contributor/Contributors"
 function Home() {
   return (
     <>
@@ -18,11 +19,11 @@ function Home() {
         >
           <div className="textDiv">
             <h1 className="hometitle">Create your wedding moments</h1>
-            <span className="smalltext">Explore our packages and vendors</span>
+            
           </div>
 
           <div class="header__form">
-            <form action="/">
+        { /* <form action="/">
               <div class="input__group">
                 <label for="facility">Choose Facility</label>
                 <select name="facility" id="facility">
@@ -46,10 +47,13 @@ function Home() {
                   <option value="location5">Udaipur</option>
                 </select>
               </div>
-              <Link to="/service">
-                <button class="btnn home-btn">Find Vendors</button>
-              </Link>
-            </form>
+            
+            </form>*/
+           }
+            <div className="headingx"><h2>Explore our packages and vendors</h2></div>
+            <center><Link to="/service">
+            <button class="btnn home-btn">Find Vendors</button>
+          </Link></center>
           </div>
         </div>
       </section>{" "}
@@ -59,8 +63,14 @@ function Home() {
       <section>
         <Homefeature/>
       </section>
+    
       <section>
         <Review />
+      </section>  <section>
+        <Faq/>
+      </section>
+      <section>
+        <Contributors/>
       </section>
      
     </>

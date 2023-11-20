@@ -8,6 +8,7 @@
     margin: auto;
     margin: 20px auto;
 }
+
 .btn1{
     border: none;
     padding: 7px 15px;
@@ -64,7 +65,7 @@ cursor: pointer;
 .tableContainer11{
     margin-top:50px ;
     position: relative;
-    right: 400px;
+    right: 180px;
    
 }
 .tableContainer11 table thead tr{
