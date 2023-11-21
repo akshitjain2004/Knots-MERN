@@ -6,13 +6,18 @@ import "./Ambrosia.css"
 import tick from"../../../../assets/tick.jpg"
 import imf from "../../../../assets/Hotel_Facade.jpg"
 import cart from "../../../../assets/cart.svg"
+import { Link } from "react-router-dom"
 function Hyatt(){
     return(
         
         <div className="ambody" ><div className="backf"><h1 className="heading">Hyatt Centric Rajpur Road </h1>
        <img src={imf} alt=""  className="weblovc"/> 
         <img src={loc} className="imgloc1"></img>
-        <div className="cart"><button className="cartf"><img src={cart} alt="" />Add to Cart</button></div>
+        <div className="cart">   <Link to="/server">   <button className="cartf">
+                <i class="uil uil-message"></i>
+                        Message Us
+                    </button></Link>
+                    </div>
         <div className="loc1">Chennai</div>
         <img src={group} className="visicon1"></img>
         <div className="number1">Visitor Number-650</div>

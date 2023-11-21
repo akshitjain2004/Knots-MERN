@@ -20,8 +20,8 @@ function Ambrosia() {
                 <img src={loc} className="imgloc1" alt="Location" />
                 <div className="cart">
                 <Link to="/server">   <button className="cartf">
-                        <img src={cart} alt="Cart" />
-                        Add to Cart
+                <i class="uil uil-message"></i>
+                        Message Us
                     </button></Link>
                 </div>
                 <div className="loc1">Hyderabad</div>

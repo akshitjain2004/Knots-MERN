@@ -36,6 +36,8 @@ import Signup from "./component/signup/Signup";
 import Serverit from "./component/serverit/Serverit";
 import Booked from "./component/booked/Booked";
 import Error from "./component/error/Error"
+import CombosPage from "./component/ourcombos/Combos";
+import Booking from "./component/bookingcomp/Booking"
 export const SigninContext = createContext();
 function App() {
   const [signedIn, setSignedIn] = useState(false);
@@ -84,10 +86,12 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/server" element={<Serverit />} />
           <Route path="/booked" element={<Booked />} />
+          <Route path="/combos" element={<CombosPage/>} />
+          <Route path="/booking/:id" element ={<Booking/>}/>
           
 
           </Routes>
-          <Footer />
+         <Footer/>
         </Router>
       </SigninContext.Provider>
     </>

@@ -27,7 +27,7 @@ function Homefeature() {
         </div>
 
         <div className="hfcard">
-        <Link to="/cards">
+        <Link to="/combos">
           <button className="btn-feature">
             <span>Budget Combos</span>
           </button>

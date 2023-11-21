@@ -7,6 +7,7 @@ import tick from"../../../../assets/tick.jpg"
 import imf from "../../../../assets/milan.jpg"
 import wrong from "../../../../assets/icons8-wrong.svg"
 import cart from "../../../../assets/cart.svg"
+import { Link } from "react-router-dom"
 function Milan(){
     return(
         
@@ -14,8 +15,11 @@ function Milan(){
        <img src={imf} alt=""  className="weblovc"/> 
         <img src={loc} className="imgloc1"></img>
         
-        <div className="cart"><button className="cartf"><img src={cart} alt="" />Add to Cart</button></div>
-        <div className="loc1">Hyderabad</div>
+        <div className="cart">   <Link to="/server">   <button className="cartf">
+                <i class="uil uil-message"></i>
+                        Message Us
+                    </button></Link>
+                    </div>        <div className="loc1">Hyderabad</div>
         <img src={group} className="visicon1"></img>
         <div className="number1">Visitor Number-1600</div>
         <div className="like1">

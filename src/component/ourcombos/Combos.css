@@ -1,0 +1,49 @@
+/* Combos.css */
+.combos-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  
+  .combo-item {
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .combo-description {
+    margin-bottom: 15px;
+  }
+  
+  .combo-price {
+    font-weight: bold;
+  }
+  
+  .book-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #d80032;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .book-now-button:hover {
+    background-color: #b70028;
+  }
+  
+
+  @media (max-width: 600px) {
+    .combo-item {
+      padding: 15px;
+    }
+  
+    .book-now-button {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }
